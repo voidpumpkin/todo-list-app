@@ -10,7 +10,7 @@ export class TodoListService {
 
   getTodoList(){
     return this.http
-    .get('http://localhost:8080/TodoList')
+    .get('http://localhost:8080/todoList')
     .toPromise()
     .catch((error: any) => {
       console.log('getTodoList catch error');

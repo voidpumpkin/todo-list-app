@@ -6,6 +6,6 @@
     <tr *ngFor="let todoItem of todoItemList">
         <td>{{todoItem.text}}</td>
         <td>{{todoItem.creationDate | date: 'yyyy/MM/dd'}}</td>
-        <button>Archive</button>
+        <button (click)="todoListService.archiveTodoItem(todoItem.id)">Archive</button>
     </tr>
 </table>

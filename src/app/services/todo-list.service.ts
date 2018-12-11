@@ -16,4 +16,13 @@ export class TodoListService {
       console.log('getTodoList catch error');
     });
   }
+
+  archiveTodoItem(id){
+    return this.http
+    .put('http://localhost:8080/archiveTodoListItem/' + id, null)
+    .toPromise()
+    .catch((error: any) => {
+      console.log('archiveTodoItem catch error');
+    });
+  }
 }

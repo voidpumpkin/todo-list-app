@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {TodoListService} from '../services/todo-list.service';
 
 @Component({
   selector: 'app-todo-list',
@@ -9,21 +10,18 @@ export class TodoListComponent implements OnInit {
 
   todoItemList;
 
-  constructor() { }
+  constructor(private todoListService: TodoListService) { }
 
   ngOnInit() {
-    this.todoItemList = [
-      {
-        "id": 0,
-        "text": "Buy a mock",
-        "creationDate": "2011-01-12T16:55:37.000+0000"
-      },
-      {
-        "id": -99,
-        "text": "Mock away",
-        "creationDate": "2017-08-10T12:36:38.000+0000"
-      }
-    ]
+    this.getTodoItemList();
+  }
+
+  getTodoItemList(){
+    this.todoListService.getTodoList()
+    .then(data => {
+      console.log(data);
+      this.todoItemList = data;
+    });
   }
 
 }

@@ -6,13 +6,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { ArchivedTodoListComponent } from './archived-todo-list/archived-todo-list.component';
+import { CreateTodoItemComponent } from './create-todo-item/create-todo-item.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoListComponent,
-    ArchivedTodoListComponent
+    ArchivedTodoListComponent,
+    CreateTodoItemComponent
   ],
   imports: [
     BrowserModule,

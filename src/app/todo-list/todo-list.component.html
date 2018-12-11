@@ -5,7 +5,7 @@
     </tr>
     <tr *ngFor="let todoItem of todoItemList">
         <td>{{todoItem.text}}</td>
-        <td>{{todoItem.creationDate}}</td>
+        <td>{{todoItem.creationDate | date: 'yyyy/MM/dd'}}</td>
         <button>Archive</button>
     </tr>
 </table>

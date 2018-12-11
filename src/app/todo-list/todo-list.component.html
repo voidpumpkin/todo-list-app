@@ -1,11 +1,9 @@
 <table>
     <tr>
-        <th>Id</th>
         <th>Text</th>
         <th>creationDate</th>
     </tr>
     <tr *ngFor="let todoItem of todoItemList">
-        <td>{{todoItem.id}}</td>
         <td>{{todoItem.text}}</td>
         <td>{{todoItem.creationDate}}</td>
         <button>Archive</button>

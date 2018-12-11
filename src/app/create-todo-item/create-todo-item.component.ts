@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateTodoItemComponent implements OnInit {
 
+  todoItemText;
+
   constructor() { }
 
   ngOnInit() {

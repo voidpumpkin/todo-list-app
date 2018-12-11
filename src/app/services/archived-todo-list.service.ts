@@ -5,7 +5,7 @@ import {HttpClient} from '@angular/common/http';
   providedIn: 'root'
 })
 export class ArchivedTodoListService {
-
+  
   constructor(private http: HttpClient) { }
 
   getTodoList(){
@@ -13,7 +13,7 @@ export class ArchivedTodoListService {
     .get('http://localhost:8080/todoList/archived')
     .toPromise()
     .catch((error: any) => {
-      console.log('getTodoList catch error');
+      console.log('getArchivedTodoList catch error');
     });
   }
 }

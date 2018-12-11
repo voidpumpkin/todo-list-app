@@ -4,6 +4,16 @@
         <th>Text</th>
         <th>creationDate</th>
     </tr>
+    <tr *ngFor="let todoItem of todoItemList">
+        <td>{{todoItem.id}}</td>
+        <td>{{todoItem.text}}</td>
+        <td>{{todoItem.creationDate}}</td>
+    </tr>
+    <tr>
+        <th>Id</th>
+        <th>Text</th>
+        <th>creationDate</th>
+    </tr>
     <tr>
         <td>0</td>
         <td>Buy a mock</td>

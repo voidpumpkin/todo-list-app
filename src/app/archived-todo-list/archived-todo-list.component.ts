@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {TodoListService} from '../services/todo-list.service';
+import {ArchivedTodoListService} from '../services/archived-todo-list.service';
 
 @Component({
   selector: 'app-archived-todo-list',
@@ -10,14 +10,14 @@ export class ArchivedTodoListComponent implements OnInit {
 
   todoItemArchivedList;
 
-  constructor(private todoListService: TodoListService) { }
+  constructor(private archivedTodoListService: ArchivedTodoListService) { }
 
   ngOnInit() {
     this.getTodoItemList();
   }
 
   getTodoItemList(){
-    this.todoListService.getTodoList()
+    this.archivedTodoListService.getTodoList()
     .then(data => {
       console.log(data);
       this.todoItemArchivedList = data;

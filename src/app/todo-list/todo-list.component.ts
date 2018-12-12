@@ -19,7 +19,6 @@ export class TodoListComponent implements OnInit {
   getTodoItemList(){
     this.todoListService.getTodoList()
     .then(data => {
-      console.log(data);
       this.todoItemList = data;
     });
   }

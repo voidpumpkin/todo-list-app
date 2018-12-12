@@ -10,6 +10,8 @@ import { ArchivedTodoListComponent } from './archived-todo-list/archived-todo-li
 import { CreateTodoItemComponent } from './create-todo-item/create-todo-item.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { SideBarComponent } from './side-bar/side-bar.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]

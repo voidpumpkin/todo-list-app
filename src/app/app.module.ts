@@ -11,7 +11,7 @@ import { CreateTodoItemComponent } from './create-todo-item/create-todo-item.com
 import { SideBarComponent } from './side-bar/side-bar.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { MatSidenavModule, MatCardModule } from '@angular/material';
+import { MatSidenavModule, MatCardModule, MatButtonModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -28,7 +28,8 @@ import { MatSidenavModule, MatCardModule } from '@angular/material';
     FormsModule,
     BrowserAnimationsModule,
     MatSidenavModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

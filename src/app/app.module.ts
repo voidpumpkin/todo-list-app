@@ -12,6 +12,7 @@ import { SideBarComponent } from './side-bar/side-bar.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MatSidenavModule, MatCardModule, MatButtonModule } from '@angular/material';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { MatSidenavModule, MatCardModule, MatButtonModule } from '@angular/mater
     BrowserAnimationsModule,
     MatSidenavModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]

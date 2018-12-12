@@ -1,8 +1,5 @@
-<table>
-    <tr *ngFor="let archivedTodoItem of todoItemArchivedList">
-        <mat-card>
-            <td>{{archivedTodoItem.text}}</td>
-            <td>{{archivedTodoItem.creationDate | date: 'yyyy/MM/dd'}}</td>
-        </mat-card>
-    </tr>
-</table>
+<div *ngFor="let archivedTodoItem of todoItemArchivedList">
+    <mat-card>
+        <div><b>{{archivedTodoItem.text}}</b> {{archivedTodoItem.creationDate | date: 'yyyy/MM/dd'}}</div>
+    </mat-card>
+</div>

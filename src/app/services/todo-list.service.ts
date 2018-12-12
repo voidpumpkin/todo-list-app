@@ -28,7 +28,6 @@ export class TodoListService {
   }
 
   addNewTodoItem(todoItemText: String){
-    console.log(todoItemText);
     return this.http
     .post('http://localhost:8080/todoListItem/',todoItemText)
     .toPromise()

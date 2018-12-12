@@ -19,6 +19,7 @@ export class CreateTodoItemComponent implements OnInit {
   addNewTodo(){
     if(this.todoItemText != '')
       this.todoListService.addNewTodoItem(this.todoItemText);
+    this.todoItemText = '';
   }
 
 }

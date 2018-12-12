@@ -1,5 +1,4 @@
-<mat-card>
-    <label for='inputText'>Todo </label>
-    <input id='inputText' type='text' [(ngModel)]='todoItemText'>
-    <button mat-button (click)='addNewTodo()'>Submit</button>
-</mat-card>
+<mat-form-field>
+    <input matInput placeholder="Enter a new todo item!" [(ngModel)]='todoItemText'>
+</mat-form-field>
+<button mat-button (click)='addNewTodo()'>Submit</button>

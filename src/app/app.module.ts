@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { ArchivedTodoListComponent } from './archived-todo-list/archived-todo-list.component';
 import { CreateTodoItemComponent } from './create-todo-item/create-todo-item.component';
+import { SideBarComponent } from './side-bar/side-bar.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { CreateTodoItemComponent } from './create-todo-item/create-todo-item.com
     AppComponent,
     TodoListComponent,
     ArchivedTodoListComponent,
-    CreateTodoItemComponent
+    CreateTodoItemComponent,
+    SideBarComponent
   ],
   imports: [
     BrowserModule,

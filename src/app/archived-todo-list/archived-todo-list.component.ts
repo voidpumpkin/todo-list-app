@@ -19,7 +19,6 @@ export class ArchivedTodoListComponent implements OnInit {
   getTodoItemList(){
     this.archivedTodoListService.getArchivedTodoList()
     .then(data => {
-      console.log(data);
       this.todoItemArchivedList = data;
     });
   }

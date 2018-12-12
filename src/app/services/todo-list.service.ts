@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class TodoListService {
 
   constructor(private http: HttpClient) { }
@@ -23,6 +24,16 @@ export class TodoListService {
     .toPromise()
     .catch((error: any) => {
       console.log('archiveTodoItem catch error');
+    });
+  }
+
+  addNewTodoItem(todoItemText: String){
+    console.log(todoItemText);
+    return this.http
+    .post('http://localhost:8080/todoListItem/',todoItemText)
+    .toPromise()
+    .catch((error: any) => {
+      console.log('addNewTodoItem catch error');
     });
   }
 }

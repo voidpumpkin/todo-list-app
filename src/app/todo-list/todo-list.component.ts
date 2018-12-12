@@ -24,4 +24,6 @@ export class TodoListComponent implements OnInit {
     });
   }
 
+  addNewTodo(){}
+
 }

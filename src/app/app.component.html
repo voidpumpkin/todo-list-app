@@ -3,7 +3,10 @@
         <app-side-bar></app-side-bar>
     </mat-drawer>
     <mat-drawer-content>
-        <p><button mat-button (click)="sidenav.toggle()">|||</button></p>
+        <mat-toolbar class=top-tool-bar>
+            <button mat-button (click)="sidenav.toggle()">|||</button>
+            {{title}}
+        </mat-toolbar>
         <router-outlet></router-outlet>
     </mat-drawer-content>
 </mat-drawer-container>

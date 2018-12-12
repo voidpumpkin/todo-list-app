@@ -11,7 +11,7 @@ import { CreateTodoItemComponent } from './create-todo-item/create-todo-item.com
 import { SideBarComponent } from './side-bar/side-bar.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { MatSidenavModule, MatCardModule, MatButtonModule, MatInputModule } from '@angular/material';
+import { MatSidenavModule, MatCardModule, MatButtonModule, MatInputModule, MatToolbarModule } from '@angular/material';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
@@ -32,7 +32,8 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     MatCardModule,
     MatButtonModule,
     DragDropModule,
-    MatInputModule
+    MatInputModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

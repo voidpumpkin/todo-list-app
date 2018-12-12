@@ -1,10 +1,8 @@
 <table>
-    <tr>
-        <th>Archived todos</th>
-        <th>Creation Date</th>
-    </tr>
     <tr *ngFor="let archivedTodoItem of todoItemArchivedList">
-        <td>{{archivedTodoItem.text}}</td>
-        <td>{{archivedTodoItem.creationDate | date: 'yyyy/MM/dd'}}</td>
+        <mat-card>
+            <td>{{archivedTodoItem.text}}</td>
+            <td>{{archivedTodoItem.creationDate | date: 'yyyy/MM/dd'}}</td>
+        </mat-card>
     </tr>
 </table>

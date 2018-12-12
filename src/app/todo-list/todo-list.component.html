@@ -1,12 +1,10 @@
 <app-create-todo-item></app-create-todo-item>
 <table>
-    <tr>
-        <th>Todo</th>
-        <th>Creation Date</th>
-    </tr>
     <tr *ngFor="let todoItem of todoItemList">
-        <td>{{todoItem.text}}</td>
-        <td>{{todoItem.creationDate | date: 'yyyy/MM/dd'}}</td>
-        <button (click)="todoListService.archiveTodoItem(todoItem.id)">Archive</button>
+        <mat-card>
+            <td>{{todoItem.text}}</td>
+            <td>{{todoItem.creationDate | date: 'yyyy/MM/dd'}}</td>
+            <button (click)="todoListService.archiveTodoItem(todoItem.id)">Archive</button>
+        </mat-card>
     </tr>
 </table>

@@ -8,10 +8,9 @@ import { AppComponent } from './app.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { ArchivedTodoListComponent } from './archived-todo-list/archived-todo-list.component';
 import { CreateTodoItemComponent } from './create-todo-item/create-todo-item.component';
-import { SideBarComponent } from './side-bar/side-bar.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { MatSidenavModule, MatCardModule, MatButtonModule, MatInputModule, MatToolbarModule } from '@angular/material';
+import { MatSidenavModule, MatCardModule, MatButtonModule, MatInputModule, MatToolbarModule, MatTabsModule } from '@angular/material';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
@@ -19,8 +18,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     AppComponent,
     TodoListComponent,
     ArchivedTodoListComponent,
-    CreateTodoItemComponent,
-    SideBarComponent
+    CreateTodoItemComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +31,8 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     MatButtonModule,
     DragDropModule,
     MatInputModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,12 +1,11 @@
-<mat-drawer-container>
-    <mat-drawer #sidenav mode="side">
-        <app-side-bar></app-side-bar>
-    </mat-drawer>
-    <mat-drawer-content>
-        <mat-toolbar class=top-tool-bar>
-            <button mat-button (click)="sidenav.toggle()">|||</button>
-            {{title}}
-        </mat-toolbar>
-        <router-outlet></router-outlet>
-    </mat-drawer-content>
-</mat-drawer-container>
+<mat-toolbar>
+    {{title}}
+</mat-toolbar>
+<mat-tab-group>
+        <mat-tab label="Todo list">
+          <app-todo-list></app-todo-list>
+        </mat-tab>
+        <mat-tab label="Archive">
+          <app-archived-todo-list></app-archived-todo-list>
+        </mat-tab>
+</mat-tab-group>

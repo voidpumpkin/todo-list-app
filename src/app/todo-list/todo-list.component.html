@@ -2,7 +2,7 @@
 <div cdkDropList class="todo-item-list" (cdkDropListDropped)="drop($event)">
 <div *ngFor="let todoItem of todoItemList" cdkDrag>
     <mat-card class="todo-item">
-        <div class="text" >{{todoItem.text}}  {{todoItem.creationDate | date: 'yyyy/MM/dd'}}</div>
+        <div class="text" ><b>{{todoItem.text}}</b>  {{todoItem.creationDate | date: 'yyyy/MM/dd'}}</div>
         <button class="archive-button" mat-button (click)="todoListService.archiveTodoItem(todoItem.id)">Archive</button>
     </mat-card>
 </div>

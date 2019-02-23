@@ -10,7 +10,7 @@ export class ArchivedTodoListService {
 
   getArchivedTodoList(){
     return this.http
-    .get('http://localhost:8080/todoList/archived')
+    .get('http://www.patogusauksas.lt:8090/todoList/archived')
     .toPromise()
     .catch((error: any) => {
       console.log('getArchivedTodoList catch error');

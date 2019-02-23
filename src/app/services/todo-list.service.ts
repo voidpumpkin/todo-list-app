@@ -11,7 +11,7 @@ export class TodoListService {
 
   getTodoList(){
     return this.http
-    .get('http://localhost:8080/todoList')
+    .get('http://www.patogusauksas.lt:8090/todoList')
     .toPromise()
     .catch((error: any) => {
       console.log('getTodoList catch error');
@@ -20,7 +20,7 @@ export class TodoListService {
 
   archiveTodoItem(id){
     return this.http
-    .put('http://localhost:8080/archiveTodoListItem/' + id, null)
+    .put('http://www.patogusauksas.lt:8090/archiveTodoListItem/' + id, null)
     .toPromise()
     .catch((error: any) => {
       console.log('archiveTodoItem catch error');
@@ -29,7 +29,7 @@ export class TodoListService {
 
   addNewTodoItem(todoItemText: String){
     return this.http
-    .post('http://localhost:8080/todoListItem/',todoItemText)
+    .post('http://www.patogusauksas.lt:8090/todoListItem/',todoItemText)
     .toPromise()
     .catch((error: any) => {
       console.log('addNewTodoItem catch error');
